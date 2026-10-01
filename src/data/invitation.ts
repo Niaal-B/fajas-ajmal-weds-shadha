@@ -19,8 +19,8 @@ export const invitation = {
 
 // Background song (YouTube), starts when the invitation is opened
 export const music = {
-  youtubeId: 'mHpTdsBbYRM',
-  startSeconds: 71
+  youtubeId: 'ivrumxRUz_Y',
+  startSeconds: 0
 };
 
 export const images = {
