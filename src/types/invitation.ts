@@ -1,0 +1,1 @@
+export type Stage = 'intro' | 'closed' | 'opening' | 'revealed';
