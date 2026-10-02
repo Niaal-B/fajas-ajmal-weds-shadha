@@ -23,6 +23,13 @@ export const music = {
   startSeconds: 0
 };
 
+// Creator credit shown on the intro screen and footer
+export const creator = {
+  label: 'Crafted by',
+  handle: '@nihal.yaml',
+  url: 'https://www.instagram.com/nihal.yaml/'
+};
+
 export const images = {
   doors: '/doors.jpg',
   card: '/card.jpg',

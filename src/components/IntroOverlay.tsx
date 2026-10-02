@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { MoonStarIcon } from 'lucide-react';
-import { invitation } from '../data/invitation';
+import { creator, invitation } from '../data/invitation';
 
 type IntroOverlayProps = {
   onOpen: () => void;
@@ -74,6 +74,14 @@ export function IntroOverlay({ onOpen }: IntroOverlayProps) {
           <p className="mt-4 font-display text-[9px] uppercase tracking-[0.4em] text-ivory/50">
             {invitation.ctaHint}
           </p>
+          <a
+            href={creator.url}
+            target="_blank"
+            rel="noreferrer"
+            className="mt-3 font-display text-[9px] uppercase tracking-[0.3em] text-ivory/45 transition-colors duration-150 hover:text-ivory/70 focus:outline-none focus-visible:ring-1 focus-visible:ring-gold-light">
+            
+            {creator.label} <span className="font-sans normal-case tracking-[0.15em] text-gold-light/80">{creator.handle}</span>
+          </a>
         </motion.div>
       </motion.div>
     </motion.div>);

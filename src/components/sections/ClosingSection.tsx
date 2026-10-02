@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { MoonStarIcon, SunIcon } from 'lucide-react';
 import { Reveal } from '../Reveal';
 import { GoldDust } from '../GoldDust';
-import { closing, couple, invitation } from '../../data/invitation';
+import { closing, couple, creator, invitation } from '../../data/invitation';
 
 export function ClosingSection() {
   return (
@@ -39,6 +39,17 @@ export function ClosingSection() {
         </Reveal>
         <Reveal delay={0.3}>
           <p className="mt-6 font-serif text-xl text-gold">Insha Allah</p>
+        </Reveal>
+        <Reveal delay={0.35} className="mt-10 flex flex-col items-center">
+          <span className="h-px w-16 bg-gold/40" aria-hidden="true" />
+          <a
+            href={creator.url}
+            target="_blank"
+            rel="noreferrer"
+            className="mt-4 font-sans text-[10px] uppercase tracking-[0.3em] text-ivory/40 transition-colors duration-150 hover:text-ivory/70 focus:outline-none focus-visible:ring-1 focus-visible:ring-gold-light">
+            
+            {creator.label} <span className="normal-case tracking-[0.15em] text-gold-light/70">{creator.handle}</span>
+          </a>
         </Reveal>
       </div>
     </footer>);
