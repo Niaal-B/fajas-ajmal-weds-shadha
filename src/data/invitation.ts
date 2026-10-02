@@ -26,8 +26,8 @@ export const music = {
 // Creator credit shown on the intro screen and footer
 export const creator = {
   label: 'Crafted by',
-  handle: '@nihal.yaml',
-  url: 'https://www.instagram.com/nihal.yaml/'
+  handle: '@niaal._',
+  url: 'https://www.instagram.com/niaal._/'
 };
 
 export const images = {
